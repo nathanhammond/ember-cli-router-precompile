@@ -1,6 +1,10 @@
-# Ember-cli-router-precompile
+# ember-cli-router-precompile
 
-This README outlines the details of collaborating on this Ember addon.
+Inside of an Ember application router.js requires active processing upon boot in the client application. This is slow. At build time we also want to know where we could possibly split the build.
+
+This addon precompiles router.js to primitives which can be instantly loaded into [route-recognizer](https://github.com/tildeio/route-recognizer) without actively running the code client side.
+
+During the static analysis phase it also identifies which assets are required for particular engines and specifies them at route boundaries so that a future (and unspecified) hook in Ember.js will be able to load those assets upon crossing that route boundary.
 
 ## Installation
 

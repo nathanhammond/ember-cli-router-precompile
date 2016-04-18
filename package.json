@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-router-precompile",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": " Precompile Ember applications' router.js file.",
   "directories": {
     "doc": "doc",
     "test": "tests"
